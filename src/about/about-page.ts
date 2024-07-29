@@ -38,8 +38,8 @@ export class AboutPage extends LitElement {
                 gap: 4rem;
             }
 
-            section:nth-of-type(even) {
-                flex-direction: row-reverse;
+            section .copy {
+                display: flex;
             }
 
             section h2 {
@@ -51,16 +51,16 @@ export class AboutPage extends LitElement {
                 top: -0.375rem;
             }
 
-            section:nth-of-type(even) h2 {
-                writing-mode: sideways-rl;
-            }
-
             section p {
                 max-width: 30rem;
                 line-height: 1.75rem;
                 margin: 0;
                 position: relative;
                 top: -0.5rem;
+            }
+
+            section:nth-of-type(odd) {
+                flex-direction: row-reverse;
             }
 
             section ul {
@@ -82,11 +82,13 @@ export class AboutPage extends LitElement {
                 <p>${pageCopy.about.welcome}</p>
                 <hr />
                 <section>
-                    <h2>Our story</h2>
+                    <div class="copy">
+                        <h2>Our story</h2>
+                        <p>${pageCopy.about.story}</p>
+                    </div>
                     <div class="img-container">
                         <img src="" />
                     </div>
-                    <p>${pageCopy.about.story}</p>
                 </section>
                 <hr />
                 <section>
