@@ -51,6 +51,15 @@ export class AboutPage extends LitElement {
                 top: -0.375rem;
             }
 
+            section h2 .angled-text {
+                transform: rotate(90deg);
+                display: inline-block;
+                position: absolute;
+                white-space: nowrap;
+                top: -100%;
+                left: 260%;
+            }
+
             section p {
                 max-width: 30rem;
                 line-height: 1.75rem;
@@ -129,7 +138,7 @@ export class AboutPage extends LitElement {
                 <hr />
                 <section>
                     <div class="copy">
-                        <h2>Beyond the Blooms</h2>
+                        <h2>Beyond <span class="angled-text">the Blooms</span></h2>
                         <p>${pageCopy.about.beyond}</p>
                     </div>
                     <div class="img-container">
