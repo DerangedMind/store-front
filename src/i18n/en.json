@@ -1,0 +1,24 @@
+{
+    "about": {
+        "welcome": "Welcome to [Your Florist Shop Name], where we bring the beauty of locally grown, native, and heirloom flowers directly to your doorstep. Our passion for sustainable, organic growing techniques ensures that every bloom is cultivated with care and respect for the environment, resulting in the freshest and most vibrant flowers for your special occasions.",
+        "story": "At [Your Florist Shop Name], we believe in the power of flowers to transform spaces and bring joy to every moment. Founded by [Florist's Name], a lifelong flower enthusiast and expert grower, our journey began with a simple dream: to cultivate and share the unique beauty of local and specialty heirloom flowers. With over [X] years of experience in the floral industry, [Florist's Name] has honed their craft, providing stunning arrangements for weddings, corporate events, and intimate gatherings.",
+        "flowers": "Our commitment to sustainability means we grow all our flowers using organic techniques, free from harmful pesticides and chemicals. We specialize in native varieties and heirloom flowers, each chosen for their unique beauty and historical significance. By supporting local ecosystems and preserving floral biodiversity, we ensure that every bouquet tells a story of nature's artistry.",
+        "ourservices": "Whether you're planning a wedding, celebrating a milestone, or simply looking to brighten someone's day, our bespoke floral arrangements are designed to impress. Our services include:",
+        "services": {
+            "weddingflorals": {
+                "title": "Wedding florals",
+                "copy": "From bridal bouquets to elaborate centerpieces, we work closely with couples to create floral designs that reflect their unique love story."
+            },
+            "eventarrangements": {
+                "title": "Event arrangements",
+                "copy": "Enhance any event with our custom floral designs, tailored to fit the theme and ambiance of your occasion."
+            },
+            "everydaybouquets": {
+                "title": "Everyday bouquets",
+                "copy": "Perfect for any day, our hand-tied bouquets bring a touch of nature's elegance into your home or office."
+            }
+        },
+        "beyond": "When [Florist's Name] isn't tending to the flowers, you'll find them [describe a few personal hobbies or interests]. Whether it's exploring the local countryside for inspiration, volunteering at community gardening projects, or simply enjoying time with family and friends, [Florist's Name] brings a genuine love for nature and creativity to every aspect of life. This passion translates into the beautiful, heartfelt floral designs that our customers have come to love and cherish.",
+        "thanks": "Thank you for visiting [Your Florist Shop Name]. We look forward to bringing the beauty of our garden into your life."
+    }
+}
