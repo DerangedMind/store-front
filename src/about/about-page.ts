@@ -1,6 +1,10 @@
 import { LitElement, html, css, TemplateResult, CSSResultArray } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { customElement } from "lit/decorators.js";
 import pageCopy from "../i18n/en.json";
+import flowerImg from "../assets/joanna-kosinska-ToV0rS9nTYs-unsplash.jpg";
+import gardenImg from "../assets/abhishek-koli-PMxTK-bHZhs-unsplash.jpg";
+import eventImg from "../assets/nathan-dumlao-5BB_atDT4oA-unsplash.jpg";
+import aboutImg from "../assets/annie-spratt-uiWIMe_dMHU-unsplash.jpg";
 
 @customElement("about-page")
 export class AboutPage extends LitElement {
@@ -12,15 +16,14 @@ export class AboutPage extends LitElement {
                 align-items: center;
                 margin: 2rem;
             }
-            p {
-                max-width: 40rem;
-            }
+
             hr {
                 width: 20%;
                 border-top: 1px solid #808080;
                 color: transparent;
                 margin: 8rem 0;
             }
+
             hr:after {
                 background: none repeat scroll 0% 0% #808080;
                 content: "";
@@ -32,14 +35,29 @@ export class AboutPage extends LitElement {
                 transform: rotate(45deg);
             }
 
+            .about {
+                max-width: 40rem;
+                text-align: center;
+            }
+
             section {
                 display: flex;
-                flex-wrap: wrap;
                 gap: 4rem;
+            }
+
+            section:nth-of-type(even) {
+                flex-direction: row-reverse;
             }
 
             section .copy {
                 display: flex;
+                gap: 1rem;
+                margin-top: 6rem;
+            }
+
+            section:nth-of-type(even) .copy {
+                flex-direction: row-reverse;
+                margin-top: 14rem;
             }
 
             section h2 {
@@ -49,6 +67,10 @@ export class AboutPage extends LitElement {
                 letter-spacing: 0.5rem;
                 position: relative;
                 top: -0.375rem;
+            }
+
+            section:nth-of-type(even) h2 {
+                writing-mode: sideways-rl;
             }
 
             section h2 .angled-text {
@@ -68,18 +90,53 @@ export class AboutPage extends LitElement {
                 top: -0.5rem;
             }
 
-            section:nth-of-type(odd) {
-                flex-direction: row-reverse;
-            }
-
             section ul {
                 max-width: 25rem;
             }
 
-            .img-container {
-                width: 256px;
-                height: 256px;
+            section.blooms {
+                gap: 0;
+            }
+
+            section.blooms h2 {
+                order: 1;
+                writing-mode: sideways-lr;
+            }
+            section.blooms .img-container {
+                order: 2;
+                margin-right: 4rem;
+            }
+
+            .img-container img {
+                max-width: 30rem;
+                max-height: 30rem;
+                width: 100%;
+                height: auto;
                 background-color: #808080;
+            }
+
+            @media only screen and (max-width: 992px) {
+                section {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                section .copy,
+                section:nth-of-type(even) .copy {
+                    margin-top: unset;
+                }
+
+                section:nth-of-type(even) {
+                    flex-direction: column-reverse;
+                }
+
+                section.blooms .copy {
+                    margin-top: 5rem;
+                }
+
+                section.blooms .img-container {
+                    margin-right: 0;
+                }
             }
         `,
     ];
@@ -88,7 +145,7 @@ export class AboutPage extends LitElement {
         return html`
             <main>
                 <h1>About us</h1>
-                <p>${pageCopy.about.welcome}</p>
+                <p class="about">${pageCopy.about.welcome}</p>
                 <hr />
                 <section>
                     <div class="copy">
@@ -96,7 +153,7 @@ export class AboutPage extends LitElement {
                         <p>${pageCopy.about.story}</p>
                     </div>
                     <div class="img-container">
-                        <img src="" />
+                        <img src=${aboutImg} />
                     </div>
                 </section>
                 <hr />
@@ -106,7 +163,7 @@ export class AboutPage extends LitElement {
                         <p>${pageCopy.about.flowers}</p>
                     </div>
                     <div class="img-container">
-                        <img src="" />
+                        <img src=${gardenImg} />
                     </div>
                 </section>
                 <hr />
@@ -132,17 +189,17 @@ export class AboutPage extends LitElement {
                         </div>
                     </div>
                     <div class="img-container">
-                        <img src="" />
+                        <img src=${eventImg} />
                     </div>
                 </section>
                 <hr />
-                <section>
+                <section class="blooms">
                     <div class="copy">
                         <h2>Beyond <span class="angled-text">the Blooms</span></h2>
                         <p>${pageCopy.about.beyond}</p>
                     </div>
                     <div class="img-container">
-                        <img src="" />
+                        <img src=${flowerImg} />
                     </div>
                 </section>
 
