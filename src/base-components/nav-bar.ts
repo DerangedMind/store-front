@@ -17,6 +17,9 @@ export class NavBar extends LitElement {
             :host {
                 display: block;
                 width: 100%;
+                position: fixed;
+                z-index: 2;
+                background-color: #242424;
             }
             nav {
                 display: flex;
