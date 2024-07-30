@@ -22,6 +22,14 @@
         "thanks": "Thank you for visiting [Your Florist Shop Name]. We look forward to bringing the beauty of our garden into your life."
     },
     "home": {
-        "intro": "Discover the enchanting world of locally grown, native, and heirloom flowers. At [Your Florist Shop Name], we pride ourselves on using sustainable, organic techniques to cultivate the freshest, most vibrant blooms. Whether you're planning a wedding, hosting an event, or simply seeking a beautiful bouquet, our bespoke floral arrangements are designed to make every moment special. Explore our collection and let the natural beauty of our flowers bring joy to your life."
+        "intro": "Discover the enchanting world of locally grown, native, and heirloom flowers. At [Your Florist Shop Name], we pride ourselves on using sustainable, organic techniques to cultivate the freshest, most vibrant blooms. Whether you're planning a wedding, hosting an event, or simply seeking a beautiful bouquet, our bespoke floral arrangements are designed to make every moment special. Explore our collection and let the natural beauty of our flowers bring joy to your life.",
+        "contact": "We'd love to help make your floral dreams come true! Whether you're planning a wedding, hosting an event, or simply need a special bouquet, our team is here to assist you. Reach out to us for personalized consultations and bespoke floral arrangements tailored to your unique needs. Contact us today and let’s create something beautiful together!"
+    },
+    "contact": {
+        "cta": "Ready to bring your floral vision to life? Contact us today to schedule a personalized consultation. Whether you're planning a wedding, organizing an event, or need a unique bouquet, our expert florist is here to help. Fill out the form below, call us at [Your Phone Number], or email us at [Your Email Address]. Let's create something beautiful together!"
+    },
+    "product": {
+        "summary": "Our Fresh Seasonal Bouquet features a charming mix of locally grown, native, and heirloom flowers, all cultivated using organic techniques. Enjoy the vibrant beauty and rich variety of seasonal blooms, including echinacea, heirloom roses, cosmos, zinnias, and lavender, all hand-tied and beautifully presented.",
+        "description": "Experience the charm and elegance of our Fresh Seasonal Bouquet, a stunning arrangement featuring the best locally grown, native, and heirloom flowers. Each bouquet is thoughtfully curated to showcase the natural beauty and variety of the season, using only organic growing techniques to ensure the freshest, most vibrant blooms."
     }
 }
