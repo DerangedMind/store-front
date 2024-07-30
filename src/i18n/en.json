@@ -20,5 +20,8 @@
         },
         "beyond": "When [Florist's Name] isn't tending to the flowers, you'll find them [describe a few personal hobbies or interests]. Whether it's exploring the local countryside for inspiration, volunteering at community gardening projects, or simply enjoying time with family and friends, [Florist's Name] brings a genuine love for nature and creativity to every aspect of life. This passion translates into the beautiful, heartfelt floral designs that our customers have come to love and cherish.",
         "thanks": "Thank you for visiting [Your Florist Shop Name]. We look forward to bringing the beauty of our garden into your life."
+    },
+    "home": {
+        "intro": "Discover the enchanting world of locally grown, native, and heirloom flowers. At [Your Florist Shop Name], we pride ourselves on using sustainable, organic techniques to cultivate the freshest, most vibrant blooms. Whether you're planning a wedding, hosting an event, or simply seeking a beautiful bouquet, our bespoke floral arrangements are designed to make every moment special. Explore our collection and let the natural beauty of our flowers bring joy to your life."
     }
 }
